@@ -18,11 +18,13 @@ class App extends React.Component {
     handleClick = (id) => {
         if (this.state.score === 12) {
             alert("YOU WIN!");
-            this.resetGame();
-        } else {
-            this.state.clicked.push(id);
             this.setState({
-            score: this.state.score + 1,
+                score: 0
+                });
+        } else {
+            this.state.clickedArray.push(id);
+            this.setState({
+            score: this.state.score + 1
             });
 
         }
