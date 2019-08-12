@@ -4,7 +4,7 @@ import React from "react";
 const Cards = props => (
   <div className="card">
     <div className="img-container">
-      <img className="img-thumbnail img-responsive" alt={props.name} src={props.image} onClick={() => props.clickPicture(props.id)}/>
+      <img className="img-thumbnail img-responsive" alt={props.name} src={props.images} onClick={() => props.clickPicture(props.id)}/>
     </div>
   </div>
 );
